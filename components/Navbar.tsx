@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-      <div className="w-full h-16 flex items-center justify-between px-0">
+      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
 
         <Link
           href="/"

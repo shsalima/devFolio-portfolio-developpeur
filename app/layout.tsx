@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar'; 
 import './globals.css'; 
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,9 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
         </main>
 
-        <footer className="w-full bg-[#070a12] border-t border-slate-900 py-6 text-center text-xs text-slate-500">
-          <p>© 2026 salima.dev — Tous droits réservés.</p>
-        </footer>
+        <Footer />
 
       </body>
     </html>
