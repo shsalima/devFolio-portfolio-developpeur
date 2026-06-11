@@ -1,4 +1,3 @@
-import {  Mail } from "lucide-react";
 import { FaGithub, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa6";
 
 export default function Footer() {
@@ -25,7 +24,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com"
+            href="https://github.com/shsalima/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 bg-[#111a2e] border border-slate-800/50 text-slate-400 rounded-xl hover:text-indigo-400 hover:border-indigo-500/30 transition-all"
@@ -33,7 +32,7 @@ export default function Footer() {
             <FaGithub className="w-4 h-4" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/salima-sahi-25a3803aa/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 bg-[#111a2e] border border-slate-800/50 text-slate-400 rounded-xl hover:text-indigo-400 hover:border-indigo-500/30 transition-all"
@@ -41,7 +40,7 @@ export default function Footer() {
             <FaLinkedinIn className="w-4 h-4" />
           </a>
           <a
-            href="sahisalima77@example.com"
+            href="sahisalima@gmail.com"
             className="p-2.5 bg-[#111a2e] border border-slate-800/50 text-slate-400 rounded-xl hover:text-indigo-400 hover:border-indigo-500/30 transition-all"
           >
 <FaRegEnvelope className="w-4 h-4" />

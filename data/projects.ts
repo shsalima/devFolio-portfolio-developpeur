@@ -1,4 +1,3 @@
-// types définis directement ici pour éviter les conflits d'importation
 export interface Project {
   id: string;
   title: string;
@@ -24,7 +23,6 @@ export interface Skill {
   category: 'Front-End' | 'Back-End' | 'Outils & Méthodologies';
 }
 
-// Les données réelles
 export const personalInfo = {
   name: 'Salima Sahi',
   title: 'Développeuse Web Full Stack',
@@ -39,6 +37,24 @@ export const personalInfo = {
 export const projectsData: Project[] = [
   {
     id: '1',
+    title: 'CrowdFund Manager',
+    description: 'Application SPA de financement participatif collaborative permettant aux porteurs de projets de créer et suivre leurs campagnes, avec une gestion fine d’état global via Redux Toolkit (Slices, Async Thunks) et sécurisation JWT.',
+    stack: ['React.js', 'Redux Toolkit', 'Tailwind CSS', 'React Router', 'Axios', 'REST API'],
+    githubUrl: 'https://github.com/shsalima/crowdFund-manager-',
+    demoUrl: '#', 
+    isFeatured: true,
+  },
+  {
+    id: '2',
+    title: 'Digital Wallet API',
+    description: 'Refactoring complet d’une API de portefeuille numérique natif vers Express.js. Architecture modulaire stricte (Routes, Contrôleurs, Middlewares métier) avec gestion de CRUD utilisateurs/wallets et opérations financières sécurisées.',
+    stack: ['Node.js', 'Express.js', 'Express Router', 'JavaScript (ES6)', 'JSON DB'],
+    githubUrl: 'https://github.com/shsalima/Mini_Digital_Wallet_Express',
+    demoUrl: '#',
+    isFeatured: true,
+  },
+  {
+    id: '3',
     title: 'Smart Invoice',
     description: 'Application de gestion des factures avec authentification JWT, gestion globale des données, routing protégé et consommation d’API REST, incluant fournisseurs, factures, paiements et dashboard analytique.',
     stack: ['React.js', 'JavaScript', 'Tailwind CSS', 'Context API', 'React Router', 'JWT'],
@@ -47,22 +63,22 @@ export const projectsData: Project[] = [
     isFeatured: true,
   },
   {
-    id: '2',
+    id: '4',
     title: 'GameExplorer',
     description: 'Application SPA de découverte de jeux vidéo avec consommation d’API externe (RAWG), routing dynamique, recherche, filtres, pagination et gestion des états asynchrones.',
     stack: ['React.js', 'JavaScript', 'Tailwind CSS', 'React Router', 'API RAWG'],
     githubUrl: 'https://github.com/shsalima/game-explorer',
     demoUrl: '#',
-    isFeatured: true,
+    isFeatured: false,
   },
   {
-    id: '3',
+    id: '5',
     title: 'FilmVault',
     description: 'Application Web de Gestion de Films avec fonctionnalités CRUD, système de notation, filtres dynamiques et sauvegarde des données via localStorage dans une interface moderne.',
     stack: ['React.js', 'JavaScript', 'Tailwind CSS', 'LocalStorage'],
     githubUrl: 'https://github.com/shsalima/FILM-VAULT',
     demoUrl: '#',
-    isFeatured: true,
+    isFeatured: false,
   }
 ];
 
@@ -88,44 +104,43 @@ export const educationData: ExperienceOrEducation[] = [
 export const experienceData: ExperienceOrEducation[] = [
   {
     id: 'exp-1',
+    title: 'CrowdFund Manager - Front-End Developer',
+    institution: 'Projet Collaboratif (Binôme)',
+    location: 'Béni Mellal',
+    period: '05/2026',
+    description: 'Conception et développement de l’état global de l’application avec Redux. Intégration du routage dynamique et gestion asynchrone des requêtes API (authentification JWT et cycle de vie des campagnes).',
+  },
+  {
+    id: 'exp-2',
+    title: 'Digital Wallet - Backend Developer',
+    institution: 'Projet Autonome (Individuel)',
+    location: 'Béni Mellal',
+    period: '02/2026',
+    description: 'Création d’une API REST complète avec Express.js. Implémentation de middlewares personnalisés pour la validation de données et la gestion des règles métier strictes liées aux transactions financières.',
+  },
+  {
+    id: 'exp-3',
     title: 'Smart Invoice - Frontend Developer',
     institution: 'Projet Académique Principal',
     location: 'Béni Mellal',
     period: '2026',
     description: 'Développement d’une application SPA de gestion des factures avec authentification JWT, gestion globale des données, routing protégé et consommation d’API REST.',
-  },
-  {
-    id: 'exp-2',
-    title: 'GameExplorer - Scrum Master',
-    institution: 'Projet Collaboratif',
-    location: 'Béni Mellal',
-    period: '2026',
-    description: 'Développement d’une application SPA de découverte de jeux vidéo avec consommation d’API externe (RAWG), routing dynamique et gestion des états asynchrones.',
-  },
-  {
-    id: 'exp-3',
-    title: 'FilmVault - Full Stack Developer',
-    institution: 'Projet Autonome',
-    location: 'Béni Mellal',
-    period: '2026',
-    description: 'Développement d’une application SPA de gestion de films avec fonctionnalités CRUD, système de notation, filtres dynamiques et sauvegarde via localStorage.',
   }
 ];
 
 export const skillsData: Skill[] = [
-  // Front-End
   { name: 'JavaScript', level: 'avancé', category: 'Front-End' },
   { name: 'React.js', level: 'avancé', category: 'Front-End' },
+  { name: 'Redux Toolkit', level: 'avancé', category: 'Front-End' }, 
   { name: 'Tailwind CSS', level: 'avancé', category: 'Front-End' },
   { name: 'HTML5 / CSS3', level: 'avancé', category: 'Front-End' },
   { name: 'Bootstrap', level: 'intermédiaire', category: 'Front-End' },
   // Back-End
-  { name: 'Node.js (Express.js)', level: 'intermédiaire', category: 'Back-End' },
+  { name: 'Node.js (Express.js)', level: 'avancé', category: 'Back-End' }, 
   { name: 'PHP (Laravel)', level: 'intermédiaire', category: 'Back-End' },
   { name: 'Python', level: 'débutant', category: 'Back-End' },
   { name: 'MySQL', level: 'intermédiaire', category: 'Back-End' },
   { name: 'MongoDB', level: 'intermédiaire', category: 'Back-End' },
-  // Outils & Méthodologies
   { name: 'Git / GitHub', level: 'avancé', category: 'Outils & Méthodologies' },
   { name: 'Figma (UI/UX)', level: 'intermédiaire', category: 'Outils & Méthodologies' },
   { name: 'Agile / Scrum', level: 'intermédiaire', category: 'Outils & Méthodologies' },

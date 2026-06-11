@@ -61,8 +61,11 @@ export default function HomePage() {
           </div>
 
           <div className="bg-[#0F172A] p-5 rounded-2xl border border-white/5 shadow-xl flex items-start gap-4">
-            <div className="p-3 bg-purple-500/10 text-purple-400 rounded-xl font-bold text-lg">📊</div>
-            <div>
+          <div className="p-3 bg-purple-500/10 text-purple-400 rounded-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2zm9-7h2a2 2 0 012 2v5a2 2 0 01-2 2h-2a2 2 0 01-2-2v-5a2 2 0 012-2z" />
+            </svg>
+          </div>            <div>
               <h4 className="font-bold text-white text-sm">Gestion de Projet Agile</h4>
               <p className="text-xs text-gray-400 mt-1">Expérience pratique avec Trello, Git, et méthodologies Scrum (Rôle Scrum Master).</p>
             </div>
