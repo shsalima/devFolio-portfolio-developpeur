@@ -1,4 +1,3 @@
-// data/portfolioData.ts
 import { Project, ExperienceOrEducation, Skill } from '@/types';
 
 export const personalInfo = {
@@ -19,7 +18,7 @@ export const projectsData: Project[] = [
     description: 'Application de gestion des factures avec authentification JWT, gestion globale des données, routing protégé et consommation d’API REST, incluant fournisseurs, factures, paiements et dashboard analytique.',
     stack: ['React.js', 'JavaScript', 'Tailwind CSS', 'Context API', 'React Router', 'JWT'],
     githubUrl: 'https://github.com/shsalima/smart-invoice-payment-tracking',
-    demoUrl: '#', // fictive URL comme demandé par le brief
+    demoUrl: '#', 
     isFeatured: true,
   },
   {
