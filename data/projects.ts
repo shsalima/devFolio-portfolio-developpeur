@@ -1,5 +1,30 @@
-import { Project, ExperienceOrEducation, Skill } from '@/types';
+// types définis directement ici pour éviter les conflits d'importation
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  stack: string[];
+  githubUrl: string;
+  demoUrl: string;
+  isFeatured: boolean;
+}
 
+export interface ExperienceOrEducation {
+  id: string;
+  title: string;
+  institution: string;
+  location: string;
+  period: string;
+  description: string;
+}
+
+export interface Skill {
+  name: string;
+  level: 'débutant' | 'intermédiaire' | 'avancé';
+  category: 'Front-End' | 'Back-End' | 'Outils & Méthodologies';
+}
+
+// Les données réelles
 export const personalInfo = {
   name: 'Salima Sahi',
   title: 'Développeuse Web Full Stack',
@@ -28,7 +53,6 @@ export const projectsData: Project[] = [
     stack: ['React.js', 'JavaScript', 'Tailwind CSS', 'React Router', 'API RAWG'],
     githubUrl: 'https://github.com/shsalima/game-explorer',
     demoUrl: '#',
-   
     isFeatured: true,
   },
   {
@@ -61,6 +85,33 @@ export const educationData: ExperienceOrEducation[] = [
   }
 ];
 
+export const experienceData: ExperienceOrEducation[] = [
+  {
+    id: 'exp-1',
+    title: 'Smart Invoice - Frontend Developer',
+    institution: 'Projet Académique Principal',
+    location: 'Béni Mellal',
+    period: '2026',
+    description: 'Développement d’une application SPA de gestion des factures avec authentification JWT, gestion globale des données, routing protégé et consommation d’API REST.',
+  },
+  {
+    id: 'exp-2',
+    title: 'GameExplorer - Scrum Master',
+    institution: 'Projet Collaboratif',
+    location: 'Béni Mellal',
+    period: '2026',
+    description: 'Développement d’une application SPA de découverte de jeux vidéo avec consommation d’API externe (RAWG), routing dynamique et gestion des états asynchrones.',
+  },
+  {
+    id: 'exp-3',
+    title: 'FilmVault - Full Stack Developer',
+    institution: 'Projet Autonome',
+    location: 'Béni Mellal',
+    period: '2026',
+    description: 'Développement d’une application SPA de gestion de films avec fonctionnalités CRUD, système de notation, filtres dynamiques et sauvegarde via localStorage.',
+  }
+];
+
 export const skillsData: Skill[] = [
   // Front-End
   { name: 'JavaScript', level: 'avancé', category: 'Front-End' },
@@ -68,11 +119,13 @@ export const skillsData: Skill[] = [
   { name: 'Tailwind CSS', level: 'avancé', category: 'Front-End' },
   { name: 'HTML5 / CSS3', level: 'avancé', category: 'Front-End' },
   { name: 'Bootstrap', level: 'intermédiaire', category: 'Front-End' },
+  // Back-End
   { name: 'Node.js (Express.js)', level: 'intermédiaire', category: 'Back-End' },
   { name: 'PHP (Laravel)', level: 'intermédiaire', category: 'Back-End' },
   { name: 'Python', level: 'débutant', category: 'Back-End' },
   { name: 'MySQL', level: 'intermédiaire', category: 'Back-End' },
   { name: 'MongoDB', level: 'intermédiaire', category: 'Back-End' },
+  // Outils & Méthodologies
   { name: 'Git / GitHub', level: 'avancé', category: 'Outils & Méthodologies' },
   { name: 'Figma (UI/UX)', level: 'intermédiaire', category: 'Outils & Méthodologies' },
   { name: 'Agile / Scrum', level: 'intermédiaire', category: 'Outils & Méthodologies' },
