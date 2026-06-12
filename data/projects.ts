@@ -135,14 +135,19 @@ export const skillsData: Skill[] = [
   { name: 'Tailwind CSS', level: 'avancé', category: 'Front-End' },
   { name: 'HTML5 / CSS3', level: 'avancé', category: 'Front-End' },
   { name: 'Bootstrap', level: 'intermédiaire', category: 'Front-End' },
-  // Back-End
+  { name: 'Next.js', level: 'débutant', category: 'Front-End' }, 
+  { name: 'TypeScript', level: 'débutant', category: 'Front-End' }, 
+
   { name: 'Node.js (Express.js)', level: 'avancé', category: 'Back-End' }, 
-  { name: 'PHP (Laravel)', level: 'intermédiaire', category: 'Back-End' },
+  { name: 'PHP (Laravel)', level: 'avancé', category: 'Back-End' },
   { name: 'Python', level: 'débutant', category: 'Back-End' },
-  { name: 'MySQL', level: 'intermédiaire', category: 'Back-End' },
-  { name: 'MongoDB', level: 'intermédiaire', category: 'Back-End' },
+  { name: 'MySQL', level: 'avancé', category: 'Back-End' },
+  { name: 'MongoDB', level: 'avancé', category: 'Back-End' },
+
+   
   { name: 'Git / GitHub', level: 'avancé', category: 'Outils & Méthodologies' },
-  { name: 'Figma (UI/UX)', level: 'intermédiaire', category: 'Outils & Méthodologies' },
-  { name: 'Agile / Scrum', level: 'intermédiaire', category: 'Outils & Méthodologies' },
+  { name: 'Figma (UI/UX)', level: 'avancé', category: 'Outils & Méthodologies' },
+  { name: 'Agile / Scrum', level: 'avancé', category: 'Outils & Méthodologies' },
   { name: 'Postman', level: 'avancé', category: 'Outils & Méthodologies' },
+  { name: 'Trello', level: 'débutant', category: 'Outils & Méthodologies' } 
 ];
