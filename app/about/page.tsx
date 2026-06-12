@@ -1,6 +1,7 @@
-import { personalInfo, educationData, experienceData } from '@/data/projects'; 
+import { personalInfo, educationData, experienceData ,projectsData} from '@/data/projects'; 
 
 export default function AboutPage() {
+  const pertoCoungt=projectsData.length
   return (
     <main className="min-h-screen bg-[#070B16] text-white pb-20 pt-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -51,7 +52,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 gap-3 w-full mt-auto">
               <div className="bg-white/5 border border-white/5 rounded-xl p-3">
-                <p className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">3</p>
+                <p className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">{pertoCoungt}</p>
                 <p className="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mt-0.5">Projets</p>
               </div>
               <div className="bg-white/5 border border-white/5 rounded-xl p-3">
@@ -69,7 +70,8 @@ export default function AboutPage() {
             <div className="text-sm text-gray-300 space-y-4 leading-relaxed">
               <p>{personalInfo.bio}</p>
               <p>
-                Ma double compétence sur le Frontend (<span className="text-blue-400 font-medium">React, JavaScript, Tailwind</span>) et le Backend (<span className="text-emerald-400 font-medium">Node.js, Express, Laravel, MySQL</span>) me confère une vision transverse indispensable à la conduite de projets web complexes. J'adore concevoir des interfaces utilisateur élégantes et performantes tout en assurant une architecture robuste et sécurisée côté serveur.
+                Ma double compétence sur le Frontend (<span className="text-blue-400 font-medium">React, JavaScript, Tailwind
+                  </span>) et le Backend (<span className="text-emerald-400 font-medium">Node.js, Express, Laravel, MySQL</span>) me confère une vision transverse indispensable à la conduite de projets web complexes. J'adore concevoir des interfaces utilisateur élégantes et performantes tout en assurant une architecture robuste et sécurisée côté serveur.
               </p>
               <p>
                 Actuellement en fin de cycle de formation, je cherche à intégrer une équipe dynamique sous forme de <span className="text-purple-400 font-semibold">stage pratique</span> afin de mettre mes compétences au service de projets concrets et d'accélérer mon évolution professionnelle.
