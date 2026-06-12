@@ -16,7 +16,6 @@ export default function ContactPage() {
           
           <div className="lg:col-span-5 space-y-4">
             
-            {/* CARTE EMAIL */}
             <div className="bg-[#0F172A]/60 border border-white/5 rounded-3xl p-5 flex items-center gap-4 shadow-xl">
               <div className="p-3 bg-blue-500/10 text-blue-400 rounded-2xl shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

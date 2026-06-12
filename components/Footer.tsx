@@ -7,21 +7,25 @@ export default function Footer() {
     <footer className="w-full bg-[#0a1120] py-8 border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
         
-        <div className="text-center sm:text-left">
-          <h3 className="text-base font-bold text-slate-200">
-            salima<span className="text-indigo-400">.dev</span>
-          </h3>
-          <p className="text-xs text-slate-500 mt-1">
-            © {currentYear} — Tous droits réservés.
-          </p>
-        </div>
+      <div className="text-center sm:text-left space-y-1.5">
+  <h3 className="text-base font-extrabold tracking-tight text-white flex items-center justify-center sm:justify-start gap-1">
+    <span>salima</span>
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">.dev</span>
+  </h3>
+  
+  <p className="text-[11px] font-medium text-slate-500 tracking-wide">
+    © {currentYear} — Conçu & Développé avec Salima.
+  </p>
+</div>
 
-        <div className="bg-[#111a2e] border border-slate-800/50 rounded-full px-5 py-1.5 text-xs text-slate-400 flex items-center justify-center gap-1">
-          <span>Développé avec</span>
-          <span className="text-rose-500">❤️</span>
-          <span>en React & TypeScript</span>
-        </div>
-
+        <div className="bg-[#111a2e] border border-slate-800/50 rounded-full px-5 py-1.5 text-[11px] font-medium text-slate-400 flex items-center justify-center gap-1.5 shadow-sm">
+  <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+  <span>Propulsé par</span>
+  <span className="text-blue-400 font-semibold">React</span>
+  <span className="text-slate-600">•</span>
+  <span className="text-purple-400 font-semibold">TypeScript</span>
+ 
+</div>
         <div className="flex items-center gap-3">
           <a
             href="https://github.com/shsalima/"
